@@ -29,10 +29,10 @@ public class Program {
 		sellers = sellerDao.findAll();
 		sellers.forEach(System.out::println);
 		
-		/*System.out.println("=== TEST 4: seller insert ===");
+		System.out.println("=== TEST 4: seller insert ===");
 		Seller newSeller = new Seller(null, "Ailson novo", "ailson@gmail.com", new Date(), 6000.0, department );
 		sellerDao.insert(newSeller);
-		System.out.println("Inserted! New Id: " + newSeller.getId());*/
+		System.out.println("Inserted! New Id: " + newSeller.getId());
 		
 		System.out.println("=== TEST 5: seller update ===");
 		seller = sellerDao.findById(1);
